@@ -55,7 +55,7 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@c804dfbdd57f713b6c079302a4c01db7017a36fc
         with:
-          task-definition: php-agulshan-staging
+          task-definition: .aws/staging-task-defination.json
           container-name: php-agulshan-staging
           image: ${{ steps.build-image.outputs.image }}
 
