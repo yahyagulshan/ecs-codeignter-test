@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   push:
     branches:
-      - main
+      - yahya-test-prod
 
 env:
   AWS_REGION: ${{ secrets.PRODUCTION_DB_NAME }}                
