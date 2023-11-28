@@ -6,12 +6,12 @@ on:
       - yahya-test-prod
 
 env:
-  AWS_REGION: ${{ secrets.PRODUCTION_DB_NAME }}                
-  ECR_REPOSITORY: ${{ secrets.PRODUCTION_DB_NAME }}   
-  ECS_SERVICE: ${{ secrets.PRODUCTION_DB_NAME }}               
-  ECS_CLUSTER: ${{ secrets.PRODUCTION_DB_NAME }}             
-  ECS_TASK_DEFINITION: ${{ secrets.PRODUCTION_DB_NAME }}                              
-  CONTAINER_NAME: ${{ secrets.PRODUCTION_DB_NAME }}        
+  AWS_REGION: ${{ secrets.AWS_REGION }}                
+  ECR_REPOSITORY: ${{ secrets.PRODUCTION_ECS_REPOSITORY_URI }}   
+  ECS_SERVICE: ${{ secrets.PRODUCTION_ECS_SERVICE_NAME }}               
+  ECS_CLUSTER: ${{ secrets.PRODUCTION_ECS_CLUSTER_NAME }}             
+  ECS_TASK_DEFINITION: ${{ secrets.PRODUCTION_TASK_DEFINITION_NAME }}                              
+  CONTAINER_NAME: ${{ secrets.PRODUCTION_CONTAINER_NAME }}        
   DB_HOST: ${{ secrets.PRODUCTION_DB_HOST }}
   DB_USERNAME: ${{ secrets.PRODUCTION_DB_USERNAME }}
   DB_PASSWORD: ${{ secrets.PRODUCTION_DB_PASSWORD }}
